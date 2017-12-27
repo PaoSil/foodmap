@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+/*estilos a la vista del logo*/
+.viewLogo {
+  background-color: #274346;
+  height: 100vh;
+}
+.containerLogo {
+  padding-top: 20vh;
+}
+.logoFood {
+  display: block;
+  margin: auto;
+  width: 60vw;
+  height: 40vh;
+}
+.title{
+  color: #ff8b24;
+  font-weight: bold;
+  text-align: center;
+}
+/*estilos a la vista principal*/
