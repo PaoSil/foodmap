@@ -8,7 +8,7 @@ body {
 }
 /*estilos a la vista del logo*/
 .viewLogo {
-  background-color: #e4414a;
+  background-color: #ee6e73;
   height: 100vh;
 }
 .containerLogo {
@@ -27,6 +27,9 @@ body {
   text-align: center;
 }
 /*estilos a la vista principal*/
+main {
+  margin-top: -4.5vh;
+}
 .bgFood {
   background-image: url("../assets/img/bgfoodred.png");
   background-size: cover;
@@ -44,14 +47,17 @@ body {
   letter-spacing: 0.2em;
   text-align: center;
 }
+.navSearch {
+  margin: 3vh auto;
+  width: 90vw;
+}
 #map {
   height: 40vh;
   width: 90vw;
-  display: block;
-  margin: 5vh auto 0;
+  margin: 3vh auto;
 }
 .subTitle {
-  color: #ff8b24;
+  color: #e4414a;
   font-weight: bold;
   text-align: center;
 }
