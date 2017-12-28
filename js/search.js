@@ -1,8 +1,6 @@
-$(document).ready(function() {
-  map = new GMaps ({
-    div: '#map',
-    lat: -12.043333,
-    lng: -77.028333,
-    zoom: 15
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 8,
+    center: {lat:-9.082632, lng:-84.0431127}
   });
-});
+}
