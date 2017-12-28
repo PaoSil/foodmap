@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -20,38 +20,8 @@
         </div>
       </div>
     </section>
-    <!--Parte principal-->
-    <main>
-      <header>
-        <div class="bgFood">
-          <div class="containerTitle">
-            <h1 class="titleWhite">Foodmap</h1>
-          </div>
-        </div>
-      </header>
-      <nav class="navSearch">
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
-      <section>
-        <div id="map">
-
-        </div>
-        <div class="searchFood">
-          <h2 class="subTitle">Comida cerca de ti</h2>
-        </div>
-      </section>
-    </main>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiibYKHhp0Rh-z1I3qPxABLXI7JFF3lco&callback=initMap" type="text/javascript"></script>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
