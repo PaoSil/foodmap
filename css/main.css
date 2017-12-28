@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 /*estilos a la vista principal*/
-main {
+.viewMain {
   margin-top: -3.5vh;
 }
 .bgFood {
