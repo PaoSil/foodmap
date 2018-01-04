@@ -22,20 +22,20 @@ En la vista principal se muestran todos los restaurantes "cerca de ti" junto con
 
 Ya que se hizo la elección del filtro deben mostrarse únicamente aquellos restaurantes que cumplan con la condición.
 
-![]()
+![](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/3.jpg?raw=true)
 
 ### Añadir evento mouseover
 
 Agrega un evento **mouseover** a las imágenes, lo que pase con el efecto es decisión tuya (Cambio de tamaño, muestra de texto, cambio de imagen, información, etc).
 
-![]()
+![](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/4.jpg?raw=true)
 
 ### Modal
 
 Al seleccionar alguno de los restaurantes, deberá mostrarse la información de este a través de un modal.
 
-![]()
+![](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/5.jpg?raw=true)
 
 Una vez cerrado el modal debe volver a la vista principal.
 
-![]()
+![](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/6.jpg?raw=true)
