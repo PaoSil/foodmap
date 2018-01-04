@@ -10,13 +10,13 @@ Crea una web-app que a través de un input pueda filtrar los restaurantes que se
 
 Con duracion de 2 a 5 segundos que redirecciona a tu vista principal.
 
-![]()
+![](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/splash.jpg?raw=true)
 
 ### Vista Principal
 
 En la vista principal se muestran todos los restaurantes "cerca de ti" junto con el input para filtrar tu elección (Los criterios de filtrado son decisión tuya, puede ser por tipo de comida, costos, orden alfabético, etc.).
 
-![]()
+![](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/2.jpg?raw=true)
 
 ### Vista de Restaurantes
 
