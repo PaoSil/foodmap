@@ -8,7 +8,7 @@ body {
 }
 /*estilos a la vista del logo*/
 .viewLogo {
-  background-color: #ee6e73;
+  background-color: #f57f17;
   height: 100vh;
 }
 .containerLogo {
@@ -27,40 +27,143 @@ body {
   text-align: center;
 }
 /*estilos a la vista principal*/
-.viewMain {
-  margin-top: -3.5vh;
-}
-.bgFood {
-  background-image: url("../assets/img/bgfoodred.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30vh;
-  width: 100vw;
-}
-.containerTitle {
-  position: relative;
-  top: 10vh;
-  margin-left: 10vw;
-  width: 80vw;
-}
-.titleWhite {
-  border: 0.3rem solid #fff;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-  text-align: center;
-}
-.navSearch {
-  margin: 3vh auto;
-  width: 90vw;
-}
+
 #map {
+  width: 100%;
   height: 40vh;
-  width: 90vw;
-  margin: 3vh auto;
+  border: 3px solid #f57f17;
 }
-.subTitle {
-  color: #e4414a;
-  font-weight: bold;
+
+#map div {
+  z-index: 1;
+}
+
+#modal-map iframe {
+  border: 3px solid #f57f17;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#restaurants-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+  object-position: center;
+}
+
+.container-img-p {
+  width: 100%;
+  position: relative;
+}
+
+.overlay-text {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+#modal {
+  border-radius: 5px;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#modal-data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#modal-data p {
+  margin: 0;
   text-align: center;
 }
+
+.btn-large, .btn {
+  background-color: #f57f17;
+}
+
+.btn-large:hover, .btn:hover {
+  background-color: #b85a08;
+}
+
+#modal-add-restaurant .modal-content {
+  justify-content: baseline;
+}
+
+#modal-add-restaurant p {
+  color: lightgray;
+}
+
+/*#modal-add-restaurant input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f57f17;
+  -webkit-box-shadow: 0 1px 0 0 #f57f17;
+  box-shadow: 0 1px 0 0 #f57f17;
+}
+
+#modal-add-restaurant input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #f57f17;
+}
+
+@keyframes colorchange {
+  from {background-color: #2b2b2b;}
+  to {background-color: white;}
+}
+
+@-webkit-keyframes colorchange {
+  from {background-color: #2b2b2b;}
+  to {background-color: white;}
+}
+
+@media (max-width: 400px) {
+  #modal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  #modal {
+    width: 100%;
+  }
+}
+*/
