@@ -1,9 +1,24 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 8,
-    center: {lat:-9.082632, lng:-84.0431127}
+    center: {lat:-34.397, lng:-150.644}
   });
 }
+
+var addFilters = (function(element) {
+  var filtersArr = [];
+  for (var i = 0; i < restaurants.length; i++) {
+    for (var n = 0; n < restaurants[i].filters.length; n++) {
+      filtersArr.push(restaurants[i].filters[n]);
+    }
+  }
+  var uniqueFilters = [...new Set(filtersArr)];
+  var filtersFinal = uniqueFilters.sort();
+  for (var a = 0; a < filtersFinal.length; a++) {
+    element.append("<option value='"+filtersFinal[a]+"'>"+filtersFinal[a]+"");
+  };
+  return filtersFinal;
+});
 
 $(document).ready(function() {
 
