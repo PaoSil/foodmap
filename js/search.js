@@ -76,34 +76,32 @@ $(document).ready(function() {
         }
       }
     };
-    /**
-    * Mouseover effect
-    */
-    $(".container-img-p").mouseover(function() {
-      $(":nth-child(1)", this).css({"opacity": "1"});
+
+    /* Efecto mouseover*/
+
+    $('.container-img-p').mouseover(function() {
+      $(':nth-child(1)', this).css({'opacity': '1'});
     });
 
-    $(".container-img-p").mouseout(function() {
-      $(":nth-child(1)", this).css({"opacity": "0"});
+    $('.container-img-p').mouseout(function() {
+      $(':nth-child(1)', this).css({'opacity': '0'});
     });
 
-    /**
-    * Determining the content of the modal
-    */
-    $(".container-img-p").click(function() {
-      var place = $(this).children("img").attr("alt");
+    /* Determinando el contenido del modal*/
+    $('.container-img-p').click(function() {
+      var place = $(this).children('img').attr('alt');
       for (var i = 0; i < restaurants.length; i++) {
-        if (place == restaurants[i].name) {
-          $("#title-modal").empty();
-          $("#modal-data").empty();
-          $("#title-modal").html(restaurants[i].name);
-          $("#modal-map").empty();
-          var newName = restaurants[i].name.replace(/ /g, "+");
+        if (place === restaurants[i].name) {
+          $('#title-modal').empty();
+          $('#modal-data').empty();
+          $('#title-modal').html(restaurants[i].name);
+          $('#modal-map').empty();
+          var newName = restaurants[i].name.replace(/ /g, '+');
           for (var n = 0; n < restaurants[i].address.length; n++) {
-            var newAddress = restaurants[i].address[n].replace(/ /g, "+");
-            var addressGoogle = newAddress.replace(/,/g, "");
-            $("#modal-map").append("<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyAR26jcQ0wriBfIDM3j327c80TqkZjw8-A&q="+addressGoogle+"'allowfullscreen></iframe>");
-            $("#modal-data").append("<p>"+restaurants[i].address[n]+"</p>");
+            var newAddress = restaurants[i].address[n].replace(/ /g, '+');
+            var addressGoogle = newAddress.replace(/,/g, '');
+            $('#modal-map').append("<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyAR26jcQ0wriBfIDM3j327c80TqkZjw8-A&q="+addressGoogle+"'allowfullscreen></iframe>");
+            $('#modal-data').append('<p>' + restaurants[i].address[n] + '</p>');
           }
           $('#modal-data').append("<p><a href='"+restaurants[i].website+"'>"+restaurants[i].website+"</a></p>");
         }
